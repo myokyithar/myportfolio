@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MY PORTFOLIO</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="https://kit.fontawesome.com/738d5e00ff.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("8FH0OyqLj-EuhTPr0");
+        })();
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>IT Engineer</p>
+                <h1>Hello, <br>I'm <span>MYO KYI THAR</span><br>from Myanmar</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------About---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../img/aboutme.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, Nice to meet you! I am Myo Kyi Thar from Myanmar. I am Front End Developer, IT Engineer and Unity Engineer. I have experience of web development by using html, css, bootstrap, javascript, java, c#, php and application development by using xamarin.forms and Unity C#. I love seeing the result of my efforts and enjoy creating things that live on the internet. And I am willing to expand my knowledge in management and also new technologies.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><i class="fa-brands fa-html5"></i><span>HTML</span></li>
+                            <li><i class="fa-brands fa-css3"></i><span>CSS</span></li>
+                            <li><i class="fa-brands fa-square-js"></i><span>javascript</span></li>
+                            <li><i class="fa-brands fa-vuejs"></i><span>Vue.js</span></li>
+                            <li><i class="fa-brands fa-bootstrap"></i><span>bootstrap</span></li>
+                            <li><i class="fa-solid fa-code"></i><span>C#(xamarin.forms, .Net)</span></li>
+                            <li><i class="fa-brands fa-java"></i><span>Java</span></li>
+                            <li><i class="fa-brands fa-unity"></i><span>UnityC#</span></li>
+                            <li><i class="fa-brands fa-php"></i><span>PHP</span></li>
+                            <li><i class="fa-solid fa-database"></i><span>MySQL</span></li>
+                            <li><i class="fa-solid fa-server"></i><span>SQL Server</span></li>
+                            <li><i class="fa-brands fa-square-git"></i><span>Git</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing Web/App Interface</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>UI?UX</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2002~2007</span><br>Basic Education High School.No2(HlaingThayar)</li>
+                            <li><span>2011~2018</span><br>West Yangon Technological University）Bachelor of Technology(IT)</li>
+                            <li><span>2012~2013</span><br>West Yangon Technological University）Bachelor of Engineering(IT)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------Services---------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies sem mi, nec viverra libero sollicitudin nec. Vestibulum est ipsum, euismod quis mauris a, volutpat placerat tellus. Aenean vitae tempus nisi. Donec at tempus sapien. Nullam ultrices metus non egestas ornare.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-alt"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies sem mi, nec viverra libero sollicitudin nec. Vestibulum est ipsum, euismod quis mauris a, volutpat placerat tellus. Aenean vitae tempus nisi. Donec at tempus sapien. Nullam ultrices metus non egestas ornare.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Unity Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies sem mi, nec viverra libero sollicitudin nec. Vestibulum est ipsum, euismod quis mauris a, volutpat placerat tellus. Aenean vitae tempus nisi. Donec at tempus sapien. Nullam ultrices metus non egestas ornare.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------Portfolio---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="../img/name.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../img/name.png" alt="">
+                    <div class="layer">
+                        <h3>Music Media App</h3>
+                        <p>The app connects you the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../img/name.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- --------------Contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>Contact@example.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>012345678</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="../my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="contactform" onclick="resetForm()">
+                        <input type="text" id="fullname" placeholder="Your Name" required>
+                        <input type="email" id="emailid" placeholder="Your Email" required>
+                        <textarea rows="6" id="message"placeholder="Your Message" ></textarea>
+                        <button class="btn btn2" onclick="sendMail()">Submit</button>
+                    </form>
+                    <!-- <span id="errormsg">Hello</span> -->
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 MyoKyiThar</p>
+        </div>
+    </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openMenu() {
+            sidemenu.style.left = "0";
+        }
+        function closeMenu() {
+            sidemenu.style.left = "-200px";
+        }
+    </script>
+</body>
+</html>
